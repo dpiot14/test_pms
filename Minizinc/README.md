@@ -1,0 +1,1 @@
+PMS hackathon: guide for Minizinc
