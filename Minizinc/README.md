@@ -1,13 +1,20 @@
 # 3D Packing with MiniZinc
 
 This folder contains a simple MiniZinc workflow for the 3D packing model.
+The file `packing.mzn` is a starter template for the exercise, not a complete model.
 
 Files:
 
-- `packing.mzn`: the MiniZinc model
+- `packing.mzn`: the MiniZinc model that students must complete
 - `csv_2_dzn.py`: converts dimension CSV files into MiniZinc `.dzn` data
 - `run_minizinc.py`: runs the full pipeline from CSV to MiniZinc output and BlockViz JSON
 - `mzn_2_json.py`: converts MiniZinc output into BlockViz `.jsonl` format
+
+## Exercise Instructions
+
+Students are expected to edit and complete `packing.mzn`.
+In particular, they should add the missing variable domains and the packing constraints needed to obtain a valid model.
+The commands below assume that `packing.mzn` has already been completed.
 
 ## Full Pipeline
 
@@ -63,6 +70,8 @@ The script accepts CSV files with either `length,width,height` or
 ### Run An Instance
 
 From this directory, run:
+
+Make sure you have completed `packing.mzn` before running this command.
 
 ```bash
 mkdir -p out
